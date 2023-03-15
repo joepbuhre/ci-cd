@@ -12,11 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Deploy using ssh
-        uses: appleboy/ssh-action@master
-        with:
-          script: |
-            echo 'hi'
+      
         
       # - name: Docker meta
       #   id: meta
