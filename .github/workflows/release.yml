@@ -1,9 +1,9 @@
 name: Deploy Hello World
 
 on:
-  pull_request:
+  push:
     branches:
-      - 'master'
+      - 'develop'
 
 jobs:
   deploy-docker-hello-world:
