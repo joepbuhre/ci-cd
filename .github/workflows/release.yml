@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - with:
-          script: |
-            echo $(git tag)
+      - run: | 
+          echo $(git tag)
+          git tag
           
         
       # - name: Docker meta
