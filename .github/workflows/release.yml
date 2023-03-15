@@ -6,15 +6,14 @@ on:
       - 'develop'
 
 jobs:
-  deploy-docker-hello-world:
+  deploy-dev:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
       - run: | 
-          echo "whatevs"
-          git tag
+          echo $(git tag)
           
         
       # - name: Docker meta
